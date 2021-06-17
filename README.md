@@ -14,7 +14,7 @@ This project consists of three stages, reconnaissance, phishing, and attack, res
 
 
 
-## Usage
+## Usage of keylogger 
 
 To achieve a keylogging attack, compile .cpp files in the malware folder, then executable the run.bat file. 
 
