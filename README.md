@@ -4,6 +4,8 @@ Disclaimer: This project is for educational purposes only.
 
 This project consists of three stages, reconnaissance, phishing, and attack, respectively. During the reconnaissance stage, the attacker collects target email addresses and uses ARP scan to obtain target IPs. Next, during the phishing stage, the attacker sends phishing emails that contain the link of the phishing website (fake Microsoft patching website in our case) to the victims. The downloader in the phishing website will redirect to the link of malware. If the victims follow the instructions, that is, download and run the executable (malware actually), the executable will start logging the keystrokes and create a backdoor shell. So the attacker can use the backdoor to retrieve a log file that contains some sensitive data. 
 
+![](https://github.com/chuang76/keylogger/blob/main/figure/architecture.png?raw=true)
+
 
 
 ## Environment
@@ -32,3 +34,4 @@ $ nc <victom IP> 1234
 
 ## Result
 
+![](https://github.com/chuang76/keylogger/blob/main/figure/result.png?raw=true)
