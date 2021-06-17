@@ -13,6 +13,7 @@ This project consists of three stages, reconnaissance, phishing, and attack, res
 - Kali Linux VM
 - Windows Server 2016 VM
 - Visual Studio C++ build tools 
+- Netcat 
 
 
 
