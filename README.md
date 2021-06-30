@@ -2,9 +2,9 @@
 
 Disclaimer: This project is for educational purposes only. 
 
-The project consists of three stages, reconnaissance, phishing, and attack, respectively. You can check the [slide](https://docs.google.com/presentation/d/1gPKOFa4L5iZNUBC93aRHLyo68CuBljt5r5G959ol310/edit?usp=sharing) and [demo video](https://drive.google.com/file/d/1p_wR3EA5aYX3AFgCXlgbovBPu3-YU2k-/view?usp=sharing) for the further information. During the reconnaissance stage, the attacker collects target email addresses and uses ARP scan to obtain target IPs. Next, during the phishing stage, the attacker sends phishing emails that contain the link of the phishing website (fake Microsoft website in our case) to the victims. The downloader in the phishing website will redirect to the link of malware. If the victims follow the instructions, that is, download and run the .bat file (contains malware actually), the executable will start logging the keystrokes and create a backdoor shell. So the attacker can use the backdoor to retrieve a log file that contains some sensitive data. 
+The project consists of three stages, reconnaissance, phishing, and attack, respectively. You can check the [slide](https://docs.google.com/presentation/d/1gPKOFa4L5iZNUBC93aRHLyo68CuBljt5r5G959ol310/edit?usp=sharing) and [demo video](https://drive.google.com/file/d/1p_wR3EA5aYX3AFgCXlgbovBPu3-YU2k-/view?usp=sharing) for the further information. During the recon stage, the attacker collects target email addresses and uses ARP scan to obtain target IPs. Next, during the phishing stage, the attacker sends phishing emails that contain the link of the phishing website (fake Microsoft website in our case) to the victims. The downloader in the phishing website will redirect to the link of malware. If the victims follow the instructions, that is, download and run the .bat file (contains malware actually), the executable will start logging the keystrokes and create a backdoor shell. So the attacker can use the backdoor to retrieve a log file that contains some sensitive data. 
 
-[arch]
+![](https://github.com/chuang76/keylogger/blob/main/figure/arch.png?raw=true)
 
 
 
@@ -64,10 +64,10 @@ Netcat is a useful networking tool. However, it is not secure. In our case, we u
 
 Here is some snapshots. 
 
-Create the phishing website (right). 
+The left is the official Microsoft patching website, while the right is the phishing website. 
 
+![](https://github.com/chuang76/keylogger/blob/main/figure/phishing.png?raw=true)
 
-
-Launch the keylogging attack successfully. 
+Launch the keylogging attack successfully as follows, the left is the attacker and the right is the victim. 
 
 ![](https://github.com/chuang76/keylogger/blob/main/figure/result.png?raw=true)
