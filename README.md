@@ -2,7 +2,7 @@
 
 Disclaimer: This project is for educational purposes only. 
 
-The project consists of three stages, reconnaissance, phishing, and attack, respectively. You can check the [slide](https://docs.google.com/presentation/d/1gPKOFa4L5iZNUBC93aRHLyo68CuBljt5r5G959ol310/edit?usp=sharing) and [demo video](https://drive.google.com/file/d/1p_wR3EA5aYX3AFgCXlgbovBPu3-YU2k-/view?usp=sharing) for the further information. During the recon stage, the attacker collects target email addresses and uses ARP scan to obtain target IPs. Next, during the phishing stage, the attacker sends phishing emails that contain the link of the phishing website (fake Microsoft website in our case) to the victims. The downloader in the phishing website will redirect to the link of malware. If the victims follow the instructions, that is, download and run the .bat file (contains malware actually), the executable will start logging the keystrokes and create a backdoor shell. So the attacker can use the backdoor to retrieve a log file that contains some sensitive data. 
+The project consists of three stages, reconnaissance, phishing, and attack, respectively. During the recon stage, the attacker collects target email addresses and uses ARP scan to obtain target IPs. Next, during the phishing stage, the attacker sends phishing emails that contain the link of the phishing website (fake Microsoft website in our case) to the victims. The downloader in the phishing website will redirect to the link of malware. If the victims follow the instructions, that is, download and run the .bat file (contains malware actually), the executable will start logging the keystrokes and create a backdoor shell. So the attacker can use the backdoor to retrieve a log file that contains some sensitive data. You can check the [slide](https://docs.google.com/presentation/d/1gPKOFa4L5iZNUBC93aRHLyo68CuBljt5r5G959ol310/edit?usp=sharing) and [demo video](https://drive.google.com/file/d/1p_wR3EA5aYX3AFgCXlgbovBPu3-YU2k-/view?usp=sharing) for the further information. 
 
 ![](https://github.com/chuang76/keylogger/blob/main/figure/arch.png?raw=true)
 
@@ -22,7 +22,7 @@ The project consists of three stages, reconnaissance, phishing, and attack, resp
 
 ### Recon
 
-1. Target email addresses: According to the NCKU student ID number rule, we can collect a number of email addresses. Take a quick example, the student ID number which starts with "F7409" means the student majors in computer science and is enrolled in 2020. 
+1. Target email addresses: According to the NCKU student ID number rule, we can collect a number of email addresses that end with @gs.ncku.edu.tw. For example, the student ID number which starts with "F7409" means the student majors in computer science and is enrolled in 2020. 
 
 2. Target IPs: Since the attacker and victims are in the same subnet, we can use the `arp-scan` command in the Kali machine to execute the scanning, then parse the information to get target IPs. 
 
