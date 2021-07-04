@@ -62,7 +62,7 @@ Netcat is a useful networking tool. However, it is not secure. In our case, we u
 
 ## Result
 
-Here is some snapshots. 
+Here are some snapshots. 
 
 The left is the official Microsoft patching website, while the right is the phishing website. 
 
